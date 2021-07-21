@@ -1,5 +1,5 @@
 import socket, threading
-print ("test")
+
 server_private_key = "8d6fsdfh39ur893uruf86we7f58734y uihuhUYGIUDHS*&AD9d8 3yuh78y(*iu(d*&D"
 
 def handle_messages(connection: socket.socket):
