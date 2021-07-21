@@ -34,8 +34,8 @@ def client() -> None:
         and handle it's input messages
     '''
 
-    SERVER_ADDRESS = '172.105.19.56'
-    SERVER_PORT = 12345
+    SERVER_ADDRESS = '127.0.0.1'
+    SERVER_PORT = 12000
 
     try:
         # Instantiate socket and start connection with server
@@ -53,7 +53,7 @@ def client() -> None:
                 socket_instance = socket.socket()
                 socket_instance.connect((SERVER_ADDRESS, SERVER_PORT))
                 count = 0
-            msg = input()
+            msg = input("Command >> ")
 
             sent_message = server_private_key + msg
             msg = sent_message
