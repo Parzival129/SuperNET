@@ -34,7 +34,7 @@ def client() -> None:
         and handle it's input messages
     '''
 
-    SERVER_ADDRESS = '127.0.0.1'
+    SERVER_ADDRESS = '127.0.1.1'
     SERVER_PORT = 12000
 
     try:

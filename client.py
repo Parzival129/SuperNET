@@ -12,7 +12,7 @@ def handle_messages(connection: socket.socket):
     '''
         Receive messages sent by the server and display them to user
     '''
-    SERVER_ADDRESS = '127.0.0.1' # change to the server
+    SERVER_ADDRESS = '127.0.1.1' # change to the server
     SERVER_PORT = 12000
 
     while True:
@@ -115,8 +115,8 @@ def client() -> None:
         and handle it's input messages
     '''
 
-    SERVER_ADDRESS = '172.105.19.56'
-    SERVER_PORT = 12345
+    SERVER_ADDRESS = '127.0.1.1'
+    SERVER_PORT = 12000
 
     try:
         # Instantiate socket and start connection with server
@@ -134,7 +134,7 @@ def client() -> None:
                 socket_instance = socket.socket()
                 socket_instance.connect((SERVER_ADDRESS, SERVER_PORT))
                 count = 0
-            msg = input()
+            msg = input("MSG >> ")
             if msg == 'quit':
                 break
 
