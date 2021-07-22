@@ -3,10 +3,6 @@ import os
 import sys
 import platform
 
-# from pynput.keyboard import Key, Controller
-
-# keyboard = Controller()
-
 Job_key = "THIS IS A JOB TASK"
 server_private_key = "8d6fsdfh39ur893uruf86we7f58734y uihuhUYGIUDHS*&AD9d8 3yuh78y(*iu(d*&D"
 expression_key = "This is an expresiion"

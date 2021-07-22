@@ -1,6 +1,6 @@
 import socket, threading
 hostname = socket.gethostname()
-
+# STUFF
 workers = []
 
 Job_key = "THIS IS A JOB TASK"
