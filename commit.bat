@@ -1,4 +1,5 @@
 @ECHO OFF
+color 0a
 ECHO COMMITING STFFF
 
 git add .
